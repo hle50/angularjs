@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+
+<body ng-app="myApp">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="#">Title</a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a ui-sref="home">Home</a>
+            </li>
+            <li>
+                <a ui-sref="product">Product</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div style="margin-top:100px" ui-view class="container">
+
+    </div>
+    <script src="lib/bower_components/jquery/dist/jquery.js"></script>
+    <script src="lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/bower_components/angular/angular.js"></script>
+    <script src="lib/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/product/product-service.js"></script>
+    <script src="js/product/product-ctrl.js"></script>
+
+</body>
+
+</html>
