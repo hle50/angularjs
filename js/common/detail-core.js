@@ -55,11 +55,6 @@ function inheritPrototype(prototype) {
 	return new F();
 }
 
-/**
- * Inherit proptotype chain of parentClazz to childClazz
- * @param parentClazz parent class 
- * @param childClazz child class 
- */
 function inherit(parentClazz, childClazz) {
 	childClazz.prototype = inheritPrototype(parentClazz.prototype);
 	childClazz.prototype.constructor = childClazz;
