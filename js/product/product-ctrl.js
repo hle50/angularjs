@@ -3,7 +3,7 @@ myapp.controller('productCtrl', function ($scope, $log, productSerivce) {
 
 	$log.info('product ctrl started');
 	var self = $scope;
-	var runtimeURL = "http://127.0.0.1:8080/rest/webapi/product";
+	var runtimeURL = "http://127.0.0.1:8080/rest/webapi/sample";
 
 	function getList() {
 		productSerivce.getData(runtimeURL).then(function (response) {
